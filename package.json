@@ -7,6 +7,12 @@
   "publishConfig": {
     "repository": "https://npm.pkg.github.com"
   },
+  "exports": {
+    ".": {
+      "import": "./dist/sample-vue-component-npm-package.es.js",
+      "require": "./dist/sample-vue-component-npm-package.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
