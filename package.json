@@ -17,6 +17,7 @@
   "publishConfig": {
     "repository": "https://npm.pkg.github.com"
   },
+  "license": "ISC",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
