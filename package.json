@@ -1,6 +1,5 @@
 {
   "name": "@qwerty0121/sample-vue-component-npm-package",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "main": "dist/counter-button.umd.js",
