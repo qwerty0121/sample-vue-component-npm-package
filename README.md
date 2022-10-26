@@ -1,7 +1,19 @@
-# Vue 3 + Vite
+# sample-vue-component-npm-package
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## このリポジトリについて
 
-## Recommended IDE Setup
+このリポジトリは、Vueコンポーネントをnpmパッケージとして公開するサンプルコードである。
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+## Vueコンポーネントをnpmパッケージとして公開する手順
+
+1. 公開するVueコンポーネントを作成
+   * 本リポジトリでは`src/components/CounterButton.vue`を公開している。
+1. エントリーポイントを作成
+   * 本リポジトリでは`src/index.js`をエントリーポイントとしている。
+1. npmモジュールをビルド
+   * 本リポジトリではViteをビルドツールとして利用しているので、`vite.config.js`にnpmモジュールのビルド設定を記載している。
+1. npmパッケージを公開
+   * `package.json`に以下の設定を追加する。
+     * module: npmパッケージとして公開するnpmモジュールファイルのパス
+     * exports.".".import: npmパッケージの読み込みでimport文を利用した際に参照するnpmモジュールファイルのパス
+     * exports.".".require: npmパッケージの読み込みでrequire関数を利用した際に参照するnpmモジュールファイルのパス
